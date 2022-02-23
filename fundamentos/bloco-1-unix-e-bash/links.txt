@@ -1,0 +1,4 @@
+https://stackoverflow.com/questions/34476932/is-there-a-limit-on-how-many-pipes-i-can-use
+https://www.devmedia.com.br/linux-shell-essentials/20158
+https://www.hostinger.com.br/tutoriais/comando-grep-linux
+
