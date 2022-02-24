@@ -1,0 +1,28 @@
+p{
+    font-size: 3em;
+    font-weight: 600;
+  }     
+  h1 {
+    
+    font-family: sans-serif;
+    font-size: 65px;
+    color: orange;
+  }
+  
+  .cozi {
+    text-decoration:black;
+    line-height: 40px;
+    font-style: italic;
+    background-color: burlywood;
+  }
+
+  body {
+    text-align: center;
+    font-size: 16px;
+  }
+  #xis {
+   background: red;
+  }
+  #yps {
+    background-color: black;
+  }
