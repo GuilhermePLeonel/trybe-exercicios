@@ -1,3 +1,9 @@
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
 header{
     border: 3px solid red;
     background-color: greenyellow;
@@ -21,11 +27,24 @@ ul li:hover{
 
 .article{
     border: 4px solid red;
-    background-color: blueviolet;
+    background-color: #E8A241;
     width: 65%;
     padding: 20px;
     padding-bottom: 620px;
     margin-right: 10px;
     position: absolute;
     top: 155px;
+}
+
+
+
+.italico{
+    font-style: italic;
+}
+
+
+.table{
+    background-color: #F8DC5C;
+    width:100% ;
+    border: 2px solid black;
 }
