@@ -1,0 +1,62 @@
+ol {
+  background-color: yellow;
+}
+
+
+.greenlines{
+  color: green;
+  font-weight: bold;
+}
+
+
+
+.maiusculo{
+ text-transform: uppercase;
+}
+
+
+
+h1,h2,h3,h4,h5{
+ color: red;
+}
+
+
+
+h1{
+ font-size: 40px;
+ border: 1px solid black;
+}
+
+
+li{
+ font: 20px;
+
+}
+
+
+.azul{
+  color: blue;
+}
+
+
+.java{
+  background-color: pink;
+}
+
+
+
+ul li a:hover {
+ 
+  color: brown;
+  font-weight: bold;
+ 
+}
+
+
+
+
+
+
+
+
+
