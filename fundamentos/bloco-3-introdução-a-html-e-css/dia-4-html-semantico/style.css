@@ -12,16 +12,14 @@ header{
 }
 
 
-.nav ul li{
-    width: ;
+.nav ul li {
+    color: #F8DC5C;
     height: 20px;
-    border-radius: %;
     background-color:#FA7F80;
     display: inline-block;
     margin-right: 70px;
     padding-right: 30px;
     padding-left: 30px;
-    
     
 }
 
@@ -37,7 +35,7 @@ header{
     background-color: #E8A241;
     width: 65%;
     padding: 20px;
-    padding-bottom: 20px;
+   
     margin-right: 10px;
     margin-top: 30px;
     position: absolute;
@@ -47,12 +45,28 @@ header{
 
 
 
-.italico{
-    font-style: italic;
+
+
+.aside{
+    display: inline-block;
+    float: right;
+    padding: 20px;
+    width: 100px;
+    background-color: #D98332;
+    position: relative;
+    top:20px
+    
 }
 
 
-.table{
+
+.italico{
+    font-style: italic;
+
+}
+
+
+.table, th, td{
     background-color: #F8DC5C;
     width:100% ;
     border: 2px solid black;
@@ -85,11 +99,22 @@ header{
     float: right;
     width: 200px;
     margin-left: 20px;
-    
-    
-
-
-  
-  
-
 }
+
+
+
+
+
+.nav-buttons{
+
+    color: #F8DC5C;
+}
+
+
+
+
+footer{
+    
+    width: 400px;
+}
+
