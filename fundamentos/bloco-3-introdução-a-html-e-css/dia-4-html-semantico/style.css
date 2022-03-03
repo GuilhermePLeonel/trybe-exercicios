@@ -3,3 +3,9 @@ header{
     background-color: greenyellow;
     padding: 20px;
 }
+
+
+
+ nav ul li:hover{
+    background-color: whitesmoke;
+}
