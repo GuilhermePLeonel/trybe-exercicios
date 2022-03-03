@@ -1,32 +1,37 @@
 body{
+    background-color:#FABA9D ;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 
 
 header{
-    border: 3px solid red;
-    background-color: greenyellow;
+    
+    background-color: #D98332;
     padding: 20px;
 }
 
 
 .nav ul li{
+    
+    height: 20px;
+    border-radius: 50%;
+    background-color:#DB9E04;
     display: inline-block;
-    margin-right: 100px;
+    margin-right: 70px;
     color: white;
     
 }
 
 
-ul li:hover{
+.nav ul li:hover{
     background-color: whitesmoke;
 }
 
 
 
 .article{
-    border: 4px solid red;
+    display: inline-block;
     background-color: #E8A241;
     width: 65%;
     padding: 20px;
@@ -47,4 +52,10 @@ ul li:hover{
     background-color: #F8DC5C;
     width:100% ;
     border: 2px solid black;
+}
+
+
+.pontos{
+
+    color: #D94918;
 }
