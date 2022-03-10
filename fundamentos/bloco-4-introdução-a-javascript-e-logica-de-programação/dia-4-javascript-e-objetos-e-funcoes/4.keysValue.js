@@ -5,6 +5,7 @@ let info = {
     recurrent: 'Yes',
   };
 
-  for (let key in info){
-      console.log(key);
+  for(let key in info){
+      console.log(info[key]);
   }
+  
