@@ -1,5 +1,5 @@
 function higherValue(array) {
-  let aux = [0];  
+  let aux = [array[0]];  
   for (let index = 0; index < array.length; index += 1) {
     if(array[index] > aux[0]){
         aux[0] = array[index];
