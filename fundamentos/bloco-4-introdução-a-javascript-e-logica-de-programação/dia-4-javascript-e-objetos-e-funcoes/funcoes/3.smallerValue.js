@@ -9,4 +9,4 @@ function smallerValue(array) {
   }
   
   
-  console.log(smallerValue([2, 3, 6, 7, 10, 18]));
+  console.log(smallerValue([2, 3, 6, 7, 10, 18, -3]));
