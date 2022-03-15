@@ -43,18 +43,42 @@
       </section>
     </main>
     <script>
+        function correctText (string) {
+          document.getElementsByTagName("h1")[0].innerText = string;
+        }
+        correctText("Exercício 5.1 - JavaScript")
         
-        document.getElementsByClassName("center-content")[0].style.backgroundColor = "White"
-        document.getElementsByClassName("main-content")[0].style.backgroundColor = "rgb(76,164,109)"
-        document.getElementsByTagName("h1")[0].innerText = "Exercicio 5.1 - JavaScript"
-        document.getElementsByTagName("p")[1].style.fontWeight = "bold"
-        document.getElementsByTagName("p")[1].innerText = "Me vejo trabalhando na Área da tecnologia com estabilidade financeira o suficiente para poder alem de atingir meus objetivos, sonhar com os proximos"
 
-        let lista = document.getElementsByTagName("p");
+        function maintext (text) {
+          document.getElementsByTagName("p")[1].innerText = text;
+        }
+        maintext("Me vejo viajando, ja estabelecido financeiramente, e podendo almejar novos objetivos")
 
-        for (let i = 0; i<lista.length; i+= 1) {
+        function backColor (color) {
+          document.getElementsByClassName("center-content")[0].style.backgroundColor = color;
+        }
+        backColor("white")
+
+        function mainLetter (type) {
+          document.getElementsByTagName("p")[1].style.fontWeight = type;
+        }
+        mainLetter("bold")
+
+        function changeColor(change) {
+          document.getElementsByClassName("main-content")[0].style.backgroundColor = change;
+        }
+        changeColor("rgb(76,164,109)")
+        
+        function list (){
+          let lista = document.getElementsByTagName("p");
+
+          for (let i = 0; i<lista.length; i+= 1) {
             console.log(lista[i]);
          }
+        }
+        list()
+
+     
 
 
 
