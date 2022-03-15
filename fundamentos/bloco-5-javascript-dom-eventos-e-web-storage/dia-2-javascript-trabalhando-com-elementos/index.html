@@ -57,29 +57,59 @@
   </head>
   <body>
     <script>
-    // exercicio1
+      // exercicio1
       let father = document.querySelector("body");
       let son = document.createElement("h1");
       son.innerText = "Exercício 5.2 - JavaScript DOM";
       father.appendChild(son);
 
-    //   exercicio2
+      //   exercicio2
       let fa = document.querySelector("body");
       let so = document.createElement("main");
       so.createClass = "main-content";
       fa.appendChild(so);
 
-    //   exercicio3
+      //   exercicio3
       let dad = document.querySelector("main");
       let child = document.createElement("section");
       child.createClass = "center-content";
       dad.appendChild(child);
 
-    //   exercicio4
+      //   exercicio4
       let da = document.querySelector("section");
       let chi = document.createElement("p");
       chi.innerText = "alguma coisa";
       da.appendChild(chi);
+
+      //   exercicio5
+      let papa = document.querySelector("main");
+      let kid = document.createElement("section");
+      kid.createClass = "center-content"
+      papa.appendChild(kid);
+
+      //   exercicio6
+      let pa = document.querySelector("main");
+      let ki = document.createElement("section");
+      ki.createClass = "right-content"
+      pa.appendChild(ki);
+
+      //   exercicio7
+      let older = document.querySelector(".center-content");
+      let younger = document.createElement("img");
+      younger.createSrc = "https://picsum.photos/200";
+      younger.createClass = "small-image";
+      older.appendChild(younger);
+
+      //   exercicio8
+      let old = document.getElementsByClassName("right-content");
+      let young = document.createElement("ul");
+      let little = document.createElement("li");
+      old.appendChild(young);
+      young.appendChild(little);
+
+
+
+
 
 
     </script>
