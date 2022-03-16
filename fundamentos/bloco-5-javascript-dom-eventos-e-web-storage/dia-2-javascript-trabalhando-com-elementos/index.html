@@ -66,13 +66,13 @@
       //   exercicio2
       let fa = document.querySelector("body");
       let so = document.createElement("main");
-      so.createClass = "main-content";
+      so.className = "main-content";
       fa.appendChild(so);
 
       //   exercicio3
       let dad = document.querySelector("main");
       let child = document.createElement("section");
-      child.createClass = "center-content";
+      child.className = "center-content";
       dad.appendChild(child);
 
       //   exercicio4
@@ -84,28 +84,43 @@
       //   exercicio5
       let papa = document.querySelector("main");
       let kid = document.createElement("section");
-      kid.createClass = "center-content"
+      kid.className = "center-content"
       papa.appendChild(kid);
 
       //   exercicio6
       let pa = document.querySelector("main");
       let ki = document.createElement("section");
-      ki.createClass = "right-content"
+      ki.className = "right-content"
       pa.appendChild(ki);
 
       //   exercicio7
       let older = document.querySelector(".center-content");
       let younger = document.createElement("img");
-      younger.createSrc = "https://picsum.photos/200";
-      younger.createClass = "small-image";
+      younger.src= "https://picsum.photos/200";
+      younger.className = "small-image";
       older.appendChild(younger);
 
       //   exercicio8
       let old = document.getElementsByClassName("right-content");
       let young = document.createElement("ul");
-      let little = document.createElement("li");
+      let numbers = ['um','dois','três','quatro','cinco','seis','sete','oito','nove','dez']
       old.appendChild(young);
+
+      for (let i = 0; i < numbers.length; i+=1){
+      
+      let little = document.createElement("li");
+      little.innerHTML = number[i];
       young.appendChild(little);
+      }
+
+       // exercicio9
+       for (let index = 1; index <= 3; index += 1) {
+        
+        const elementH3 = document.createElement('h3');
+        elementH3.innerHTML = 'Show ' + index;
+        elementMain.appendChild(elementH3);
+      }
+
 
 
 
