@@ -58,68 +58,96 @@
   <body>
     <script>
       // exercicio1
-      let father = document.querySelector("body");
-      let son = document.createElement("h1");
-      son.innerText = "Exercício 5.2 - JavaScript DOM";
-      father.appendChild(son);
+      let body = document.getElementsByTagName('body');
+      let title = document.createElement('h1');
+      title.innerText = 'Exercício 5.2 - JavaScript DOM';
+      body[0].appendChild(title);
 
       //   exercicio2
-      let fa = document.querySelector("body");
-      let so = document.createElement("main");
-      so.className = "main-content";
-      fa.appendChild(so);
+      let main = document.createElement('main');
+      main.classList = 'main-content';
+      main.style.backgroundColor = 'green'
+      body[0].appendChild(main);
 
       //   exercicio3
-      let dad = document.querySelector("main");
-      let child = document.createElement("section");
-      child.className = "center-content";
-      dad.appendChild(child);
+      let section1 = document.createElement('section');
+      section1.classList = 'center-content';
+      main.appendChild(section1);
 
       //   exercicio4
-      let da = document.querySelector("section");
-      let chi = document.createElement("p");
-      chi.innerText = "alguma coisa";
-      da.appendChild(chi);
+      let p = document.createElement('p');
+    p.innerText = "algum texto"
+      section1.appendChild(p);
+      
 
       //   exercicio5
-      let papa = document.querySelector("main");
-      let kid = document.createElement("section");
-      kid.className = "center-content"
-      papa.appendChild(kid);
+      let section2 = document.createElement('section');
+      section2.classList = 'left-content';
+      main.appendChild(section2);
+      main.removeChild(section2)
 
       //   exercicio6
-      let pa = document.querySelector("main");
-      let ki = document.createElement("section");
-      ki.className = "right-content"
-      pa.appendChild(ki);
+      let section3 = document.createElement('section');
+      section3.classList = 'right-content';
+      section3.style.marginRight = 'auto';
+      main.appendChild(section3);
 
       //   exercicio7
-      let older = document.querySelector(".center-content");
-      let younger = document.createElement("img");
-      younger.src= "https://picsum.photos/200";
-      younger.className = "small-image";
-      older.appendChild(younger);
+      let img = document.createElement('img');
+      img.classList = 'small-image';
+      img.src = 'https://picsum.photos/200'
+      section2.appendChild(img);
 
       //   exercicio8
-      let old = document.getElementsByClassName("right-content");
-      let young = document.createElement("ul");
       let numbers = ['um','dois','três','quatro','cinco','seis','sete','oito','nove','dez']
-      old.appendChild(young);
-
+      let list = document.createElement('ul');
+      section3.appendChild(list);
       for (let i = 0; i < numbers.length; i+=1){
-      
-      let little = document.createElement("li");
-      little.innerHTML = number[i];
-      young.appendChild(little);
+        let listItem = document.createElement ('li');
+        listItem.innerText = numbers[i];
+        list.appendChild(listItem) ;
       }
 
-       // exercicio9
-       for (let index = 1; index <= 3; index += 1) {
-        
-        const elementH3 = document.createElement('h3');
-        elementH3.innerHTML = 'Show ' + index;
-        elementMain.appendChild(elementH3);
+
+      let nodeList = document.querySelectorAll('li');
+      for (let i = 0; i < nodeList.length; i += 1){
+        if (i === nodeList.length-1 || i === nodeList.length-2){
+          list.removeChild (nodeList[i]);
+        }
       }
+
+      // exercicio9
+      for (let i = 0; i < 3; i+=1) {
+      let h3 = document.createElement('h3');
+      h3.classList = 'description'
+      main.appendChild(h3);
+      }
+       
+
+      //  exercicio2.1
+      // title.classList = 'title'
+
+      // exercicio2.2
+      // h3.classList = 'description'
+
+      // exercicio2.3
+      // main.removeChild(section2)
+
+      // exercicio2.4
+      // section3.style.marginRight = 'auto';
+
+      // exercicio2.5
+      // main.style.backgroundColor = 'green'
+
+      // exercicio2.6
+      // let nodeList = document.querySelectorAll('li');
+      // for (let i = 0; i < nodeList.length; i += 1){
+      //   if (i === nodeList.length-1 || i === nodeList.length-2){
+      //     list.removeChild (listItem[i]);
+      //   }
+      // }
+
+      
 
 
 
