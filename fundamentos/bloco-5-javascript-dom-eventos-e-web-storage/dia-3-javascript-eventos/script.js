@@ -59,17 +59,17 @@ function addDays() {
 addDays();
 
 // exercicio2
-function addButton(string) {
+function saturButton(string) {
   let button = document.createElement("button");
   let buttonsContainer = document.querySelector(".buttons-container");
   button.id = "btn-holiday";
   button.innerText = string;
   buttonsContainer.appendChild(button);
 }
-addButton("Feriados");
+saturButton("Feriados");
 
 // exercicio3
-function buttonClick() {
+function buttonHolli() {
   let holidays = document.querySelectorAll(".day");
   for (let i = 0; i < holidays.length; i += 1) {
     if (
@@ -84,4 +84,14 @@ function buttonClick() {
     }
   }
 }
-document.getElementById("btn-holiday").addEventListener("click", buttonClick);
+document.getElementById("btn-holiday").addEventListener("click", buttonHolli);
+
+// exercicio4
+function holiButton(string) {
+  let button = document.createElement("button");
+  let buttonsContainer = document.querySelector(".buttons-container");
+  button.id = "btn-friday";
+  button.innerText = string;
+  buttonsContainer.appendChild(button);
+}
+holiButton("Sexta-Feira");
