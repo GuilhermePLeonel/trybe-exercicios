@@ -95,3 +95,23 @@ function holiButton(string) {
   buttonsContainer.appendChild(button);
 }
 holiButton("Sexta-Feira");
+
+// exercicio5
+function buttonSatur() {
+  let holidays = document.querySelectorAll(".day");
+  for (let i = 0; i < holidays.length; i += 1) {
+    if (
+      holidays[i].className === "day friday" ||
+      holidays[i].className === "day holiday friday"
+    ) {
+      if (holidays[i].innerText != "SEXTOU!!") {
+        holidays[i].innerText = "SEXTOU!!";
+      } else if (holidays[i].innerText === "SEXTOU!!") {
+        holidays[i].innerText = dezDaysList[i];
+      }
+    }
+  }
+}
+document.getElementById("btn-friday").addEventListener("click", buttonSatur);
+
+// exercicio6
