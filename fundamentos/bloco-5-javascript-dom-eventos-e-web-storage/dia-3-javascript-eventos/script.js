@@ -129,3 +129,11 @@ function zoomOut(event) {
   event.target.style.margin = "";
 }
 document.getElementById("days").addEventListener("mouseout", zoomOut, false);
+
+// exercicio7
+function tasks(string) {
+  let span = document.createElement("span");
+  span.innerText = string;
+  document.querySelector(".my-tasks").appendChild(span);
+}
+tasks("Cozinhar");
