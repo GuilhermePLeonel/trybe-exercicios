@@ -136,4 +136,15 @@ function tasks(string) {
   span.innerText = string;
   document.querySelector(".my-tasks").appendChild(span);
 }
-tasks("Cozinhar");
+tasks("Passar em todos os projetos com 100%");
+
+// exercicio8
+function lyrics(cor) {
+  let div = document.createElement("div");
+  div.classList = "task";
+  div.style.backgroundColor = cor;
+  document.querySelector(".my-tasks").appendChild(div);
+}
+lyrics("green");
+
+// exercicio9
