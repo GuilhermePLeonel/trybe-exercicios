@@ -148,3 +148,13 @@ function lyrics(cor) {
 lyrics("green");
 
 // exercicio9
+function selectTask(event) {
+  if (document.querySelector(".my-tasks div ").className === "task") {
+    event.target.classList = "task-selected";
+  } else {
+    event.target.classList = "task";
+  }
+}
+document
+  .querySelector(".my-tasks")
+  .addEventListener("click", selectTask, false);
