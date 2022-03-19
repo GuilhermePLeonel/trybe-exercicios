@@ -32,7 +32,7 @@ function addDays() {
     if (dezDaysList[i] === 24 || dezDaysList[i] === 31) {
       let day = document.createElement("li");
       day.innerText = dezDaysList[i];
-      day.classList = "day holliday";
+      day.classList = "day holiday";
       november.appendChild(day);
     } else if (
       dezDaysList[i] === 4 ||
@@ -46,7 +46,7 @@ function addDays() {
     } else if (dezDaysList[i] === 25) {
       let day = document.createElement("li");
       day.innerText = dezDaysList[i];
-      day.classList = "day holliday friday";
+      day.classList = "day holiday friday";
       november.appendChild(day);
     } else {
       let day = document.createElement("li");
@@ -59,3 +59,29 @@ function addDays() {
 addDays();
 
 // exercicio2
+function addButton(string) {
+  let button = document.createElement("button");
+  let buttonsContainer = document.querySelector(".buttons-container");
+  button.id = "btn-holiday";
+  button.innerText = string;
+  buttonsContainer.appendChild(button);
+}
+addButton("Feriados");
+
+// exercicio3
+function buttonClick() {
+  let holidays = document.querySelectorAll(".day");
+  for (let i = 0; i < holidays.length; i += 1) {
+    if (
+      holidays[i].className === "day holiday" ||
+      holidays[i].className === "day holiday friday"
+    ) {
+      if (holidays[i].style.backgroundColor === "") {
+        holidays[i].style.backgroundColor = "red";
+      } else if (holidays[i].style.backgroundColor === "red") {
+        holidays[i].style.backgroundColor = "";
+      }
+    }
+  }
+}
+document.getElementById("btn-holiday").addEventListener("click", buttonClick);
