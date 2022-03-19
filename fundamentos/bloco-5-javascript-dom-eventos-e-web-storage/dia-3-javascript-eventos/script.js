@@ -59,17 +59,17 @@ function addDays() {
 addDays();
 
 // exercicio2
-function saturButton(string) {
+function holiButton(string) {
   let button = document.createElement("button");
   let buttonsContainer = document.querySelector(".buttons-container");
   button.id = "btn-holiday";
   button.innerText = string;
   buttonsContainer.appendChild(button);
 }
-saturButton("Feriados");
+holiButton("Feriados");
 
 // exercicio3
-function buttonHolli() {
+function buttonHoli() {
   let holidays = document.querySelectorAll(".day");
   for (let i = 0; i < holidays.length; i += 1) {
     if (
@@ -77,24 +77,27 @@ function buttonHolli() {
       holidays[i].className === "day holiday friday"
     ) {
       if (holidays[i].style.backgroundColor === "") {
-        holidays[i].style.backgroundColor = "red";
-      } else if (holidays[i].style.backgroundColor === "red") {
+        holidays[i].style.backgroundColor = "green";
+        holidays[i].style.borderRadius = "50%";
+        holidays[i].style.color = "white";
+      } else if (holidays[i].style.backgroundColor === "green") {
         holidays[i].style.backgroundColor = "";
+        holidays[i].style.color = "";
       }
     }
   }
 }
-document.getElementById("btn-holiday").addEventListener("click", buttonHolli);
+document.getElementById("btn-holiday").addEventListener("click", buttonHoli);
 
 // exercicio4
-function holiButton(string) {
+function saturButton(string) {
   let button = document.createElement("button");
   let buttonsContainer = document.querySelector(".buttons-container");
   button.id = "btn-friday";
   button.innerText = string;
   buttonsContainer.appendChild(button);
 }
-holiButton("Sexta-Feira");
+saturButton("Sexta-Feira");
 
 // exercicio5
 function buttonSatur() {
@@ -115,3 +118,14 @@ function buttonSatur() {
 document.getElementById("btn-friday").addEventListener("click", buttonSatur);
 
 // exercicio6
+function zoomIn(event) {
+  event.target.style.fontSize = "25px";
+  event.target.style.margin = "auto";
+}
+document.getElementById("days").addEventListener("mouseover", zoomIn, false);
+
+function zoomOut(event) {
+  event.target.style.fontSize = "";
+  event.target.style.margin = "";
+}
+document.getElementById("days").addEventListener("mouseout", zoomOut, false);
