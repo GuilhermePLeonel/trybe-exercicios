@@ -178,3 +178,31 @@ function dayColor() {
 }
 
 dayColor();
+
+// exercicioBônus
+function addButton() {
+  let input = document.getElementById("task-input");
+  let add = document.getElementById("btn-add");
+  let taskList = document.querySelector(".task-list");
+
+  add.addEventListener("click", addList);
+  function addList() {
+    if (input.value === "") {
+      window.alert("ERRO: digite algum compromisso!");
+    } else {
+      let listItem = document.createElement("li");
+      listItem.innerText = input.value;
+      taskList.appendChild(listItem);
+    }
+  }
+  function enter(event) {
+    if (event.key == "enter") {
+      let listItem = document.createElement("li");
+      listItem.innerText = input.value;
+      taskList.appendChild(listItem);
+    }
+  }
+  input.addEventListener("key", enter);
+}
+
+addButton();
