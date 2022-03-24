@@ -166,7 +166,9 @@ function dayColor() {
   let taskDiv = document.querySelector(".task");
   let taskColor = taskDiv.style.backgroundColor;
 
-  days.addEventListener("click", function (event) {
+  days.addEventListener("click", evento);
+
+  function evento(event) {
     let eventTargetColor = event.target.style.color;
     if (taskSelected.length > 0 && eventTargetColor !== taskColor) {
       let color = taskSelected[0].style.backgroundColor;
@@ -174,7 +176,7 @@ function dayColor() {
     } else if (eventTargetColor === taskColor && taskSelected.length !== 0) {
       event.target.style.color = "rgb(119,119,119)";
     }
-  });
+  }
 }
 
 dayColor();
