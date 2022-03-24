@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="" method="get">
+    <form id="form" action="" method="get">
         <p>Digite seu nome completo:</p>
         <input name="name" id='name-input' type="text" minlength="10" maxlength="40" placeholder="Nome completo">
         <br><br>
@@ -33,9 +33,10 @@
         <input type="checkbox" id="oportunity-input" name="oportunidades">
         <br><br>
         <label for="imageUsage-input">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
-        <input type="checkbox" id="imageUsage-input" name="imageUsage">
+        <input type="checkbox" id="imageUsage-input" name="imageUsage" required>
         <br><br>
         <button id="send-input" name="send" type="submit">Enviar</button>
+        <button id="clear-input" name="clear" >Apagar dados</button>
     </form>
     <script src="script.js"></script>
 </body>
