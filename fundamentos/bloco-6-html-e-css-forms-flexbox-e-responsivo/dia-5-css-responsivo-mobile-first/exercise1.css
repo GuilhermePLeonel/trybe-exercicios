@@ -10,20 +10,20 @@
   box-sizing: inherit;
 }
 
-@media screen and (max-width: 375px){
-  body {
-    font-size: 20px; 
-    margin: 15px;
-  }
-  
-  h1 {
-    font-size: 30px;
-  }
 
-  section figure {
-    margin-bottom: 50px;
-  }
-}
+    body {
+      font-size: 20px; 
+      margin: 20px;
+    }
+    
+    h1 {
+      font-size: 30px;
+    }
+
+    section figure {
+      margin-bottom: 50px;
+    }
+
 
 
 article {
@@ -52,8 +52,24 @@ section {
 
 figure {
     margin: 0;
+    width: 40%;
 }
 
 figcaption {
   font-size: .8em;
+}
+
+/* mobile css */
+@media screen and (max-width: 650px){
+  body {
+    background-color: #FD9577;
+    margin: 10px;
+  }
+
+  section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 }
