@@ -10,12 +10,17 @@
   box-sizing: inherit;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 375px){
   body {
     font-size: 20px; 
   }
+  
   h1 {
     font-size: 30px;
+  }
+
+  section figure {
+    margin-bottom: 50px;
   }
 }
 
