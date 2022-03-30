@@ -79,9 +79,11 @@ header {
     border-radius: 5%;
     background-color:#E68B55;
     color: #64391F;
-    font-weight: 900;
+    font-weight: auto;
+    font-size: 16px;
     border-style:dotted;
     margin-left: 5px;
+    width: 50%;
     
 }
 
@@ -92,6 +94,11 @@ header {
     font-weight: 900;
     border-style:dotted;
     margin-right: 5px;
+    font-weight: auto;
+    font-size: 16px;
+    width: 50%;
+    height: 10%;
+    align-self: stretch;
 }
 
 
@@ -101,8 +108,13 @@ h2 {
 }
 
 header p {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 900;
+}
+
+header nav {
+    display: flex;
+    margin-left: 43%;
 }
 
 header {
@@ -114,4 +126,87 @@ header {
     border-style:dotted;
     margin-bottom: 10px;
 }
+
+.main-content {
+}
+}
+
+/* telas grandes CSS */
+@media screen and (min-width: 800px){
+    body {
+    margin: 6px;
+    background-color: #64391F;
+    color: whitesmoke;
+}
+
+#lists {
+    display: flex;
+    font-size: 13px;
+    justify-content: center;
+}
+
+.aside-two {
+    height: 225px;
+    border-radius: 0%;
+    background-color:#E68B55;
+    color: #64391F;
+    font-weight: auto;
+    font-size: 19px;
+    border-style:dotted;
+    margin-left: 5px;
+    width: 50%; 
+}
+
+.aside-two ul{
+    margin-left: 5%;
+}
+
+.aside-one ul{
+    margin-left: 5%;
+}
+
+.aside-one {
+    border-radius: 0%;
+    background-color: #E3976B;
+    color: #64391F;
+    font-weight: 900;
+    border-style:dotted;
+    margin-right: 5px;
+    font-weight: auto;
+    font-size: 19px;
+    width: 50%;
+    height: 10%;
+    align-self: stretch;
+}
+
+
+h2 {
+    text-align: center;
+    font-weight: 900;
+}
+
+header p {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+header nav {
+    display: flex;
+    margin-left: 45%;
+}
+
+header {
+    background-color: #FD9877;
+    border-radius: 0%;
+    color: #64391F;
+    font-weight: 900;
+    text-align: center;
+    border-style:dotted;
+    margin-bottom: 10px;
+}
+
+.main-content {
+
+}
+
 }
