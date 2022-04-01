@@ -1,3 +1,4 @@
+// exercicio 2.3
 let btn = document.querySelector('button');
 let counter = document.querySelector('input');
 counter.style.width = '30px'

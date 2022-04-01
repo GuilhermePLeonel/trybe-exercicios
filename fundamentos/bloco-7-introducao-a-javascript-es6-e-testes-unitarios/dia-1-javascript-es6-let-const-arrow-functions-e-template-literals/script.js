@@ -51,3 +51,32 @@ let longestWord = (phrase) => {
   console.log(longest);
 }
 longestWord('Antônio foi no banheiro e não sabemos o que aconteceu');
+
+
+// exercicio 3.4
+let word = 'Tryber x aqui!';
+let wordList = word.split(' ');
+let skills = ['javascript', 'css', 'html', 'bootstrap', 'flexbox']
+
+let xFinder = (string) => {
+  for (let i = 0; i < wordList.length; i += 1) {
+    if (wordList[i] === 'x') {
+      wordList[i] = string;
+    }
+  }
+  let newString = wordList.toString().replace(/,/g, " ");
+
+  let concat = (newString) => {
+    console.log(`${newString} Minhas cinco principais habilidades são:
+  ${skills.sort()}`);
+  }
+  concat(newString)
+
+}
+xFinder('Guilherme')
+
+// let concat = (newString) => {
+//   console.log(`${newString} Minhas cinco principais habilidades são:
+//   ${skills.sort()}`);
+// }
+// concat(newString)
