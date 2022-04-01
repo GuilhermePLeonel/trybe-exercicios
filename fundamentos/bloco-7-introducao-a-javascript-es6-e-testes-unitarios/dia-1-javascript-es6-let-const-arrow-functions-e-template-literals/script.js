@@ -1,9 +1,9 @@
-const oddsAndEvens = [13, 3, 4, 10, 7, 2];
-
-let orderNumbers = () => {
-  oddsAndEvens.sort((a,b) => a-b);
+let fatorial = (number) => {
+  const array = [number];
+  for (let i = number-1; i > 0; i -= 1) {
+    array[0] = array[0] * i;
+  }
+  console.log(array);
 }
-orderNumbers()
 
-console.log(`Os números ${oddsAndEvens} se encontram ordenados de forma crescente!`); // será necessário alterar essa linha 😉
-
+fatorial(4)
