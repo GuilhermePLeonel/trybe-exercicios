@@ -47,8 +47,23 @@ describe('2º Função: myRemove ', () => {
 
 describe('3º Função: myFizzBuzz ', () => {
   test('teste 1 : a função recebe o parametro 15 e retorna "fizzbuzz"', () => {
-    const numeros = [1, 2, 3, 4];
     expect(myFizzBuzz(15)).toBe('fizzbuzz');
+  });
+
+  test('teste 2 : a função recebe o parametro 6 e retorna "fizz"', () => {
+    expect(myFizzBuzz(6)).toBe('fizz');
+  });
+
+  test('teste 3 : a função recebe o parametro 10 e retorna "buzz"', () => {
+    expect(myFizzBuzz(10)).toBe('buzz');
+  });
+
+  test('teste 4 : a função recebe o parametro 14 e retorna o proprio número', () => {
+    expect(myFizzBuzz(14)).toBe(14);
+  });
+
+  test('teste 5 : a função recebe o parametro "marcos" e retorna false', () => {
+    expect(myFizzBuzz('marcos')).toBe(false);
   });
 
 });
