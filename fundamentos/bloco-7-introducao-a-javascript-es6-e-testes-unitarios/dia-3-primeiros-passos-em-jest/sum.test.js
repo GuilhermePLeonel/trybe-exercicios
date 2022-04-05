@@ -1,6 +1,6 @@
 
 const { array } = require('yargs');
-const {sum, myRemove} = require('./sum');
+const {sum, myRemove, myFizzBuzz} = require('./sum');
 
 
 describe('1º Função: sum ', () => {
@@ -33,8 +33,22 @@ describe('2º Função: myRemove ', () => {
     expect([1, 2, 4]).toEqual(myRemove(numeros, 3));
   });
 
-  test('teste 1 : a função recebe os parametros ([1, 2, 3, 4], 3) retorna o array sem o 3', () => {
+  test('teste 2 : a função recebe os parametros ([1, 2, 3, 4], 3) e retorna um array diferente de [1, 2, 3, 4]', () => {
     const numeros = [1, 2, 3, 4];
     expect([1, 2, 3, 4]).not.toEqual(myRemove(numeros, 3));
   });
+
+  test('teste 3 : a função recebe os parametros ([1, 2, 3, 4], 5) retorna o array sem alterações', () => {
+    const numeros = [1, 2, 3, 4];
+    expect([1, 2, 3, 4]).toEqual(myRemove(numeros, 5));
+  });
+});
+
+
+describe('3º Função: myFizzBuzz ', () => {
+  test('teste 1 : a função recebe o parametro 15 e retorna "fizzbuzz"', () => {
+    const numeros = [1, 2, 3, 4];
+    expect(myFizzBuzz(15)).toBe('fizzbuzz');
+  });
+
 });
