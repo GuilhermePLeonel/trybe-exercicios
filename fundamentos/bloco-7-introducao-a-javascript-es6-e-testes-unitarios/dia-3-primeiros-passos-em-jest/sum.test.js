@@ -1,6 +1,9 @@
 
-const sum = require('./sum');
+const { array } = require('yargs');
+const {sum, myRemove} = require('./sum');
 
+
+describe('1º Função: sum ', () => {
   test('teste 1 : a função recebe os parametros (4, 5) e retorna 9', () => {
     expect(sum(4, 5)).toBe(9);
   });
@@ -10,13 +13,28 @@ const sum = require('./sum');
   });
 
   test('teste 3: a funão retorna um erro se os parametros forem (4, "5")', () => {
-    expect(() => {sum(4, '5')}).toThrow('parameters must be numbers');
+    expect(() => { sum(4, '5') }).toThrow('parameters must be numbers');
   });
 
   test('teste 4: valida se a mensagem de erro é "parameters must be numbers"', () => {
-    try{
+    try {
       sum(4, '5');
     } catch (e) {
       expect(e.message).toBe('parameters must be numbers');
     }
   });
+
+});
+
+
+describe('2º Função: myRemove ', () => {
+  test('teste 1 : a função recebe os parametros ([1, 2, 3, 4], 3) retorna o array sem o 3', () => {
+    const numeros = [1, 2, 3, 4];
+    expect([1, 2, 4]).toEqual(myRemove(numeros, 3));
+  });
+
+  test('teste 1 : a função recebe os parametros ([1, 2, 3, 4], 3) retorna o array sem o 3', () => {
+    const numeros = [1, 2, 3, 4];
+    expect([1, 2, 3, 4]).not.toEqual(myRemove(numeros, 3));
+  });
+});
