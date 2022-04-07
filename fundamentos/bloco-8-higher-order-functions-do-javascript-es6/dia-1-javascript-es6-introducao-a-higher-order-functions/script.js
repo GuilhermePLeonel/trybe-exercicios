@@ -37,6 +37,21 @@ console.log(lotery(3, check));
 
 
 // Terceiro exercicio
+const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
 
+const count = (answers, student) => {
+  let greens = 0;
+  for (let i = 0; i < answers.length; i += 1){
+    for (let i2 = 0; i2 < student.length; i2 += 1){
+      if (i===i2 && answers[i] === student[i2]) {greens += 1 };
+    }
+  }
+  return greens;
+}
 
-console.log(Math.floor((Math.random() * 11) + 1))
+const HOF = (answers, student, count) => {
+  return count(answers, student);
+}
+
+console.log(HOF(RIGHT_ANSWERS, STUDENT_ANSWERS, count));
