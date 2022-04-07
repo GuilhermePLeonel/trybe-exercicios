@@ -1,3 +1,4 @@
+// Primeiro exercicio
 const somebody = (nomeCompleto) => {
  const object = {
    nomeCompleto,
@@ -17,3 +18,25 @@ const newEmployees = () => {
 };
 
 console.log(newEmployees());
+
+// Segundo exercicio
+const check = (number, randomNumber) =>{
+  return number === randomNumber;
+}
+
+const lotery = (number, check) => {
+  const randomNumber = Math.floor((Math.random() * 5) + 1);
+  if (check(number, randomNumber) === true) {
+    return "Parabéns você ganhou";
+  }
+  return "Tente novamente"
+}
+
+console.log(lotery(3, check));
+
+
+
+// Terceiro exercicio
+
+
+console.log(Math.floor((Math.random() * 11) + 1))
