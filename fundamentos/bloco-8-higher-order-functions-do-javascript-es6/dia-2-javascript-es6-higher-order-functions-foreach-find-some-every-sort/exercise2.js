@@ -1,4 +1,4 @@
-// 2 - Encontre o nome da primeira pessoa autora do livro nascida no ano de 1947.
+// 2 - Retorne o nome do livro de menor nome.
 const books = [
   {
     id: 1,
@@ -61,3 +61,13 @@ const books = [
     releaseYear: 1928,
   },
 ];
+
+function smallerName(books) {
+  let nameBook = books[0].name;
+  books.forEach((object) => {
+  object.name.length < nameBook.length? nameBook = object.name : null}
+  );
+  return nameBook;
+}
+
+console.log(smallerName(books));
