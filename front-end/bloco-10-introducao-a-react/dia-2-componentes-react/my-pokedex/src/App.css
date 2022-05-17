@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #282c34;
 }
 
 .App-logo {
@@ -34,8 +35,6 @@
   border-radius: 20px;
   border: solid black 2px;
   width: 20%;
-  margin-right: 5%;
-  margin-top: 2%;
 }
 
 .title {
